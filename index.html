@@ -1,0 +1,172 @@
+<html>
+    <head>
+        <style>
+            h1 {
+                color:greenyellow;
+                font-size: 50px;
+                border: 5px solid yellow;
+                padding: 10px;
+                margin: 20px;
+                width: 50%;
+                height: 100px;
+
+                padding-left: 100px;
+                margin-right: 100px;
+            }
+            p {
+                color:pink;
+
+            }
+            #first {
+                font-size: 40px;
+                margin-top: 0px;
+            }
+
+            #first:hover {
+                font-size: 50px;
+
+            }
+
+            #header {
+                width: 100%;
+                height: 150px;
+                background-color:orange;
+            }
+            #sidebar {
+                width: 30%;
+                height: 600px;
+                background-color: cadetblue;
+                float: left;
+            }
+            #content {
+                width: 70%;
+                height: 600px;
+                background-color: orchid;
+                margin-left: 30%;
+                position: relative;
+            }
+            #footer {
+                width: 100%;
+                height: 100px;
+                background-color: darksalmon;
+            }
+
+            .blueviolet {
+                color: blueviolet;
+                font-weight: bold;
+            }
+
+             img {
+                 width: 350px;
+             }
+
+             img:hover {
+                opacity: 50%;
+            }
+             
+             li:hover {
+                text-decoration: underline;
+            }
+
+            .latvija {
+                width: 600px;
+            }
+
+            .attels_1 {
+                width: 50px;
+                position: absolute;
+                top: 150px;
+                left: 250px;
+                transition: opacity 2s, scale 2s, transform 2s;
+            }
+
+            .attels_2 {
+                width: 50px;
+                position: absolute;
+                top: 250px;
+                left: 450px;
+                transition: top 2s;
+            }
+
+            .attels_1:hover {
+                opacity: 0,1;
+                scale: 8;
+                transform: rotate(890deg);
+            }
+
+            .attels_2:hover {
+                top: 150px;
+            }
+
+            .karte {
+                position: relative;
+            }
+
+            .spriditis {
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                width: 100px;
+
+                animation-name: go;
+                animation-duration: 5s;
+                animation-iteration-count: infinite;
+            }
+
+            @keyframes go {
+                from {
+                    top: 0px;
+                    left: 0px;
+                }
+
+                25% {
+                    top: 0px;
+                    left: 500px;
+                }
+
+                50% {
+                    top: 200px;
+                    left: 500px;
+                }
+
+                75% {
+                    top: 200px;
+                    left: 0px;
+                }
+
+                to {
+                    top: 0px;
+                    left: 0px;
+                }
+            }
+
+        </style>
+    </head>
+    <body>
+        <div id="header">
+            <h1>School - Skola - Школа</h1>
+        </div>
+        <div id="sidebar"></div>
+        <div id="content">
+            <p id="first">Tekst Tekst Tekst Tekst</p>
+            <p>Tekst Tekst Tekst Tekst</p>
+
+            <ul>
+                <li>Pirmais elements</li>
+                <li>Otrais elements</li>
+                <li>Trešais elements</li>
+            </ul>
+
+            <img src="Images/School.jpg" alt="">
+
+            <div class="karte">
+                <img class="latvija"src="images/map.jpg" alt="">
+                <img class="attels_1" src="images/dog.svg" alt="">
+                <img class="attels_2" src="images/tree.svg" alt="">
+                <img class= "spriditis"src="images/sprīdītis.png" alt="">
+            </div>
+            
+        </div>
+        <div id="footer"></div>
+    </body>
+</html>
